@@ -142,6 +142,55 @@ input:focus {
   outline: 3px solid #ddd;
 }
 
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.dropdown-content div {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  width: fit-content;
+  background-color: #F6F6F6;
+  width: 80%;
+}
+
+@media screen and (min-width: 990px) {
+  .dropdown-content div {
+    width: 100%;
+  }
+}
+
+.dropdown-content a {
+  cursor: pointer;
+  font-family: "Avenir Next";
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 5;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
 button {
   display: block;
   font-family: "Avenir Next";
