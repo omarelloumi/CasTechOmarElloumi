@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/* RESET */
+* {
+  box-sizing: border-box
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FDFBF7;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../fonts/Avenir.otf");
+}
+
+@font-face {
+  font-family: 'Arial Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arial Regular'), url('ARIAL.woff') format('woff');
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Avenir Next";
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 3rem 0 2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0 1.25rem;
+}
+
+@media screen and (min-width: 990px) {
+  h1 {
+    font-size: 2rem;
+    margin: 4rem 0 3rem;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+  }
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 15px 25px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+input:focus {
+  outline: 3px solid #ddd;
+}
+
+button {
+  display: block;
+  font-family: "Avenir Next";
+  background-color: #E62A3B;
+  letter-spacing: 0.1;
+  color: white;
+  height: 100%;
+  font-size: 1rem;
+  line-height: 120%;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 11px;
+}
