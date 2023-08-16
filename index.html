@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oma Care Omar</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6P0fUsSP67rOq-iFQJHulVD0_NIbhDdQ&libraries=places"></script>
   </head>
   <body>
     <main>
@@ -31,7 +32,10 @@
             <button id="submit" onclick="submitFunction()">Rechercher</button>
         </div>
     </main>
+    <div id="map"></div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6P0fUsSP67rOq-iFQJHulVD0_NIbhDdQ&callback=initMap"></script>
     <script src="js/recherche.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
 

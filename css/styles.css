@@ -205,3 +205,10 @@ button {
   cursor: pointer;
   border-radius: 11px;
 }
+
+#map {
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  margin: 3rem auto;
+}
